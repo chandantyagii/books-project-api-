@@ -4,6 +4,10 @@ import cors from "cors";
 
 const app = express();
 
+// so that both react and the node js , localhost will be connect to each other
+// because now they are different
+
+
 app.use(cors());
 
 app.get("/"  , (req,resp)=>{
@@ -27,6 +31,8 @@ app.get("/users", (req, resp) => {
 });
 
 
+//making dynamic port for make it deploye
 
-app.listen(12000);
 
+const PORT = process.env.PORT || 12000;
+app.listen(PORT); 
