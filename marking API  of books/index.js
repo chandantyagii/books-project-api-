@@ -37,4 +37,21 @@ app.get("/users", (req, resp) => {
 const PORT = process.env.PORT || 12000;
 app.listen(PORT);
 
-// chandan
+
+
+// now we have to do bellow changes
+
+
+
+// You just need to add one line inside "scripts".
+
+// Your current:
+
+// "scripts": {
+//     "test": "echo \"Error: no test specified\" && exit 1"
+// }
+
+// ✅ Replace it with this:
+// "scripts": {
+//     "start": "node index.js"
+// }
